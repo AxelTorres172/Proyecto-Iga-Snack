@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Barra de Inicio*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #FDDC01;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+h1{
+    color: black;
+    font-size: 25px;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+a{
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 200px;
+}
+
+a:hover{
+    color: gray;
+}
+/* Estilos-Titulos_Secciones*/
+.Titulo-secciones{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+/*Estilos Apartado-Hamburguesas*/
+.apartado-Hamburguesas .Titulo-secciones {
+    color: white; /* Cambia el color del texto a blanco */
+}
+.apartado-Hamburguesas{
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    padding: 20px;
+    color: white;
+}
+
+.hamburguesa{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc; /* Línea divisoria */
+}
+
+.hamburguesa:last-child{
+    border-bottom: none; /* Quitar la línea del último item */
+}
+
+.Hamburguesas, .Alitas, .Bonneles{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hamburguesa, .alita, .bonnel{
+    display: flex;
+    align-items: flex-start;
+}
+
+.hamburguesa img, .alita img, .bonnel img{
+    max-width: 250px; /* Ajuste de tamaño de la imagen */
+    margin-right: 20px;
+}
+
+.hamburguesa h2, .alita h2, .bonnel h2{
+    margin: 0;
+}
+
+.hamburguesa p, .alita p, .bonnel p{
+    margin: 0;
+}
+
+/*Estilos Apartado-Alitas*/
+.apartado-Alitas .Titulo-secciones {
+    color: black; /* Cambia el color del texto a blanco */
+}
+.apartado-Alitas{
+    background-color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: black;
+    padding: 20px;
+}
+
+.alita{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc; /* Línea divisoria */
+}
+
+.alita:last-child{
+    border-bottom: none; /* Quitar la línea del último item */
+}
+
+/*Estilos Apartado-Bonneles*/
+.apartado-Bonneles{
+    background-color: #FBDC0D;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    padding: 20px;
+}
+
+.bonnel{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc; /* Línea divisoria */
+}
+
+.bonnel:last-child{
+    border-bottom: none; /* Quitar la línea del último item */
+}
+
+.Precio-Productos{
+    display: flex;
+    flex-direction: column;
+}
