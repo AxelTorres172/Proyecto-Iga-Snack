@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
 
 /*Barra de Inicio*/
@@ -14,9 +12,11 @@ nav{
     justify-content: space-between;
     padding: 10px;
     background-color: #FDDC01;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: italic;
 }
+
 
 h1{
     color: black;
@@ -38,96 +38,189 @@ a{
 a:hover{
     color: gray;
 }
-
-/*Promociones Slide*/
-.Promos{
+/* Estilos-Titulos_Secciones*/
+.Titulo-secciones{
     text-align: center;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: italic;
+    margin: 20px 0;
 }
-
-.slider-frame {
+.slider-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
     overflow: hidden;
-    background-image: url(acaffa32751817.56929eefe6ed3.jpg);
-    background-color: #612b9a;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slide {
+    display: none; /* Ocultar todos los slides por defecto */
     text-align: center;
-}
-
-.slider-frame ul {
-    display: flex;
-    padding: 10px;
-    width: 500%;
-    animation: slide 20s infinite alternate ease-in-out;
-}
-
-.slider-frame li {
-    width: 20%;
-    list-style: none;
-}
-
-.slider-frame img {
-    width: 20%;
-}
-
-@keyframes slide {
-    0% {margin-left: 0;}
-    30% {margin-left: 0;}
-    45% {margin-left: -100%;}
-    65% {margin-left: -100%;}
-    85% {margin-left: -200%;}
-    100% {margin-left: -200%;}
-}
-
-/*Apartado Ubicacion*/
-.Ubicacion{
-    display: flex;
-    background-color: black;
-    background-image: url();
-}
-
-.Ubicacion .info {
-    flex: 1;
     padding: 20px;
 }
 
-.Ubicacion p{
+.slide img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.slide .info {
+    margin-top: 10px;
+}
+
+.active {
+    display: block; /* Mostrar solo el slide activo */
+}
+
+/* Botones de navegación */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
-.Ubicacion iframe{
-    flex: 1;
-    border: 0;
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
 
-/*Footer*/
-footer {
+/*Nuevo H*/
+.hamburguesa-container {
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    max-width: 600px; 
+    margin: auto; 
+}
+
+.hamburguesa-img {
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+.hamburguesa-info {
+    max-width: 350px; /* Controla el ancho del texto */
+}
+
+.hamburguesa-info h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.hamburguesa-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/*Estilos Apartado-Hamburguesas*/
+.apartado-Hamburguesas .Titulo-secciones {
+    color: white; 
+}
+.apartado-Hamburguesas{
+    background-image: url(./IMG/fondo\ hamburguesas.png);
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    padding: 20px;
+    color: black;
+}
+
+.hamburguesa{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.hamburguesa:last-child{
+    border-bottom: none; 
+}
+
+.Hamburguesas, .Alitas, .Bonneles{
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
-.content {
-    flex: 1;
-}
-
-.redes-sociales{
-    background-color: #333;
-    text-align: center;
-    width: 100%;
-    height: 100px;
+.hamburguesa, .alita, .bonnel{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-start;
 }
 
-.redes-sociales ul{
-    align-items: center;
+.hamburguesa img, .alita img, .bonnel img{
+    max-width: 250px; 
+    margin-right: 20px;
 }
 
-.redes-sociales ul li a{
-    color: white;
-    margin: 100px;
+.hamburguesa h2, .alita h2, .bonnel h2{
+    margin: 0;
 }
 
-p{
-    color: white;
+.hamburguesa p, .alita p, .bonnel p{
+    margin: 0;
+}
+
+/*Estilos Apartado-Alitas*/
+.apartado-Alitas .Titulo-secciones {
+    color: black;
+}
+.apartado-Alitas{
+    background-color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: black;
+    padding: 20px;
+}
+
+.alita{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc; /* Línea divisoria */
+}
+
+.alita:last-child{
+    border-bottom: none; /* Quitar la línea del último item */
+}
+
+/*Estilos Apartado-Bonneles*/
+.apartado-Boneless{
+    background-image: url(./IMG/fondo\ bonneles.png);
+    background-color: #FBDC0D;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    padding: 20px;
+}
+
+.bonnel{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc; /* Línea divisoria */
+}
+
+.bonnel:last-child{
+    border-bottom: none; /* Quitar la línea del último item */
+}
+
+.Precio-Productos{
+    display: flex;
+    flex-direction: column;
 }
