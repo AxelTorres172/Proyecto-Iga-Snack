@@ -133,29 +133,36 @@ p{
 }
 
         /* login.html */
+.fondo-login {
+    background-image: url('./IMG/acaffa32751817.56929eefe6ed3.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .login-container {
-    max-width: 400px;
-    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
-    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    max-width: 400px;
+    width: 100%;
 }
-
 .login-container h1 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #333;
 }
-
 .login-container label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     color: #333;
 }
-
 .login-container input {
     width: 100%;
     padding: 10px;
@@ -163,7 +170,6 @@ p{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 .login-container button {
     width: 100%;
     padding: 10px;
@@ -173,7 +179,6 @@ p{
     font-weight: bold;
     cursor: pointer;
 }
-
 .login-container button:hover {
     background-color: #e6c700;
 }
