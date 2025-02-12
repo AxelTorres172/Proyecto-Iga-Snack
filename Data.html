@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Productos</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="Data.css">
+</head>
+<body>
+
+<header>
+    <h1>Administración de Productos</h1>
+    <img src="Img/IGA Logo.jpg" alt="Logo de la Empresa">
+</header>
+
+<table id="productsTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre del Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Hamburgesa clasica</td>
+            <td>$20.00</td>
+            <td>50</td>
+            <td>
+                <button onclick="editProduct(1)">Editar</button>
+                <button onclick="deleteProduct(1)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Burrito</td>
+            <td>$30.00</td>
+            <td>30</td>
+            <td>
+                <button onclick="editProduct(2)">Editar</button>
+                <button onclick="deleteProduct(2)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Boneless</td>
+            <td>$50.00</td>
+            <td>20</td>
+            <td>
+                <button onclick="editProduct(3)">Editar</button>
+                <button onclick="deleteProduct(3)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Hamburgesa monstruo</td>
+            <td>$80.00</td>
+            <td>15</td>
+            <td>
+                <button onclick="editProduct(4)">Editar</button>
+                <button onclick="deleteProduct(4)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Loche mediaval</td>
+            <td>$120.00</td>
+            <td>10</td>
+            <td>
+                <button onclick="editProduct(5)">Editar</button>
+                <button onclick="deleteProduct(5)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Pizza especial</td>
+            <td>$15.00</td>
+            <td>40</td>
+            <td>
+                <button onclick="editProduct(6)">Editar</button>
+                <button onclick="deleteProduct(6)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Papas a la francesa</td>
+            <td>$25.00</td>
+            <td>35</td>
+            <td>
+                <button onclick="editProduct(7)">Editar</button>
+                <button onclick="deleteProduct(7)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Hot dog</td>
+            <td>$40.00</td>
+            <td>25</td>
+            <td>
+                <button onclick="editProduct(8)">Editar</button>
+                <button onclick="deleteProduct(8)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Rollos de queso</td>
+            <td>$45.00</td>
+            <td>18</td>
+            <td>
+                <button onclick="editProduct(9)">Editar</button>
+                <button onclick="deleteProduct(9)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Pollo frito</td>
+            <td>$70.00</td>
+            <td>22</td>
+            <td>
+                <button onclick="editProduct(10)">Editar</button>
+                <button onclick="deleteProduct(10)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Ensalada de cesar</td>
+            <td>$35.00</td>
+            <td>28</td>
+            <td>
+                <button onclick="editProduct(11)">Editar</button>
+                <button onclick="deleteProduct(11)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Malteada de chocolate</td>
+            <td>$90.00</td>
+            <td>12</td>
+            <td>
+                <button onclick="editProduct(12)">Editar</button>
+                <button onclick="deleteProduct(12)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Tacos al pastor</td>
+            <td>$55.00</td>
+            <td>30</td>
+            <td>
+                <button onclick="editProduct(13)">Editar</button>
+                <button onclick="deleteProduct(13)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Campechana</td>
+            <td>$60.00</td>
+            <td>14</td>
+            <td>
+                <button onclick="editProduct(14)">Editar</button>
+                <button onclick="deleteProduct(14)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Tostada siberia</td>
+            <td>$75.00</td>
+            <td>16</td>
+            <td>
+                <button onclick="editProduct(15)">Editar</button>
+                <button onclick="deleteProduct(15)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Pizza de trompo</td>
+            <td>$20.00</td>
+            <td>50</td>
+            <td>
+                <button onclick="editProduct(16)">Editar</button>
+                <button onclick="deleteProduct(16)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Trompo burger</td>
+            <td>$15.00</td>
+            <td>60</td>
+            <td>
+                <button onclick="editProduct(17)">Editar</button>
+                <button onclick="deleteProduct(17)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Salchipapas</td>
+            <td>$25.00</td>
+            <td>22</td>
+            <td>
+                <button onclick="editProduct(18)">Editar</button>
+                <button onclick="deleteProduct(18)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Guajoloteras</td>
+            <td>$30.00</td>
+            <td>40</td>
+            <td>
+                <button onclick="editProduct(19)">Editar</button>
+                <button onclick="deleteProduct(19)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Torta de tripitas</td>
+            <td>$18.00</td>
+            <td>35</td>
+            <td>
+                <button onclick="editProduct(20)">Editar</button>
+                <button onclick="deleteProduct(20)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Tacos con frijoles</td>
+            <td>$50.00</td>
+            <td>28</td>
+            <td>
+                <button onclick="editProduct(21)">Editar</button>
+                <button onclick="deleteProduct(21)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Quesadillas sin queso</td>
+            <td>$65.00</td>
+            <td>17</td>
+            <td>
+                <button onclick="editProduct(22)">Editar</button>
+                <button onclick="deleteProduct(22)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Pozole</td>
+            <td>$70.00</td>
+            <td>20</td>
+            <td>
+                <button onclick="editProduct(23)">Editar</button>
+                <button onclick="deleteProduct(23)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Pizza mexicana</td>
+            <td>$55.00</td>
+            <td>25</td>
+            <td>
+                <button onclick="editProduct(24)">Editar</button>
+                <button onclick="deleteProduct(24)">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Papas con habanero</td>
+            <td>$85.00</td>
+            <td>10</td>
+            <td>
+                <button onclick="editProduct(25)">Editar</button>
+                <button onclick="deleteProduct(25)">Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="Data.js"></script>
+
+</body>
+</html>

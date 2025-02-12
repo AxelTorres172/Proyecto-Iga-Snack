@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Arka</title>
+    <link rel="stylesheet" href="Admin.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Bienvenido al Panel de Administración</h1>
+            <img src="img/IGA Logo.jpg"></div> 
+    </div>
+
+    <div class="content">
+        <p>¿A dónde deseas navegar?</p>
+        <div class="options">
+            <div class="option" onclick="navigate('configuracion')">
+                <img src="img/Configuracion.png" alt="Añadir productos">
+                <span>Añadir productos</span>
+            </div>
+            <div class="option" onclick="navigate('tabla')">
+                <img src="img/Data_table.png" alt="Tabla de datos">
+                <span>Tabla de datos</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="Admin.js"></script>
+
+</body>
+</html>

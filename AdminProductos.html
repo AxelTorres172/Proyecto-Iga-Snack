@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Productos - Arka</title>
+    <link rel="stylesheet" href="AdminProductos.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Administración de Productos</h1>
+        <img src="Img/IGA Logo.jpg" alt="Logo de IGA" class="logo">
+    </div>
+
+    <div class="content">
+        <h2>Añadir un Nuevo Producto</h2>
+        <form id="addProductForm">
+            <label for="productName">Nombre del producto:</label>
+            <input type="text" id="productName" required>
+
+            <label for="productPrice">Precio del producto:</label>
+            <input type="number" id="productPrice" required>
+
+            <label for="productImage">Imagen del producto:</label>
+            <input type="file" id="productImage" accept="image/*" required>
+
+            <button type="button" onclick="addProduct()">Añadir Producto</button>
+        </form>
+
+        <h2>Lista de Productos</h2>
+        <div id="productList" class="product-list">
+        </div>
+    </div>
+
+    <script src="AdminProductos.js"></script>
+
+</body>
+</html>
