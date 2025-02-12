@@ -25,9 +25,13 @@
             event.preventDefault(); 
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
+
             if (username === "16641" && password === "DAMV") {
                 localStorage.setItem('isLoggedIn', 'true'); 
                 window.location.href = "perfil.html"; 
+            } else if (username === "16648" && password === "LFPF16") {
+                localStorage.setItem('isLoggedIn', 'true'); 
+                window.location.href = "Admin.html"; 
             } else {
                 document.getElementById('error-message').style.display = 'block'; 
             }
