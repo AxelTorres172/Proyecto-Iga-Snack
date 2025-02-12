@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Perfil - IGA Snack</title>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <nav class="barra-inicio">
+                <h1>IGA SNACK</h1>
+                <ul>
+                    <li>
+                        <a href="Index.html">Inicio</a>
+                        <a href="menu.html">Menú</a>
+                        <a href="perfil.html">Perfil</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1 class="Promos">Bienvenido a tu Perfil</h1>
+        <p>Aquí puedes ver tu información personal, pedidos recientes y más.</p>
+    </div>
+
+    <script>
+        if (localStorage.getItem('isLoggedIn') !== 'true') {
+            window.location.href = "login.html"; 
+        }
+    </script>
+</body>
+</html>
